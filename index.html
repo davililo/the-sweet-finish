@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>THE SWEET FINISH | Luxury Massage Spa in Westlands, Nairobi</title>
   <meta name="description" content="A private luxury massage and wellness destination in Westlands, Nairobi.">
-  <link rel="icon" href="assets/favicon.png">
+  <link rel="icon" href="assets/logo.jpg" type="image/jpeg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#home" aria-label="THE SWEET FINISH home">
-        <img src="assets/logo.png" alt="THE SWEET FINISH logo" class="brand-logo">
+        <img src="assets/logo.jpg" alt="THE SWEET FINISH logo" class="brand-logo">
         <span class="brand-copy"><span class="brand-name">THE SWEET FINISH</span><span class="brand-subtitle">MASSAGE SPA</span></span>
       </a>
       <nav class="desktop-nav" aria-label="Main navigation">
@@ -65,9 +65,13 @@
     <section class="contact" id="contact"><div class="container contact-inner"><p class="eyebrow">Contact</p><h2>Reserve or simply say hello</h2><address>⌖ <span>Westlands, behind Sarit Centre, School Lane, Westview Apartments, Nairobi.</span></address><div class="contact-actions"><a class="button button-primary" data-whatsapp>◔ Chat on WhatsApp</a><a class="button button-outline" href="tel:0182095210">⌕ Call 0182095210</a><a class="button button-card" href="https://www.google.com/maps/dir/?api=1&destination=Westview%20Apartments%2C%20School%20Lane%2C%20Westlands%2C%20Nairobi%2C%20Kenya&travelmode=driving" target="_blank" rel="noopener">↗ Get Directions</a><button class="button button-card" data-book>Book Now</button></div></div></section>
   </main>
 
-  <footer><div class="container footer-grid"><div><img src="assets/logo.png" alt="THE SWEET FINISH logo" class="footer-logo"><h3>THE SWEET FINISH</h3><p>Relax. Restore. Reconnect.</p></div><div><p class="eyebrow">Explore</p><a href="#services">Services</a><a href="#about">About Us</a><a href="#contact">Contact</a></div><div><p class="eyebrow">Visit & Contact</p><p>Westlands, behind Sarit Centre,<br>School Lane,<br>Westview Apartments,<br>Nairobi.</p><a data-whatsapp>◔ Chat on WhatsApp</a><a href="tel:0182095210">⌕ Call 0182095210</a></div></div><div class="copyright">© 2026 THE SWEET FINISH, Westlands, Nairobi. All rights reserved.</div></footer>
+  <footer><div class="container footer-grid"><div><img src="assets/logo.jpg" alt="THE SWEET FINISH logo" class="footer-logo"><h3>THE SWEET FINISH</h3><p>Relax. Restore. Reconnect.</p></div><div><p class="eyebrow">Explore</p><a href="#services">Services</a><a href="#about">About Us</a><a href="#contact">Contact</a></div><div><p class="eyebrow">Visit & Contact</p><p>Westlands, behind Sarit Centre,<br>School Lane,<br>Westview Apartments,<br>Nairobi.</p><a data-whatsapp>◔ Chat on WhatsApp</a><a href="tel:0182095210">⌕ Call 0182095210</a></div></div><div class="copyright">© 2026 THE SWEET FINISH, Westlands, Nairobi. All rights reserved.</div></footer>
 
-  <a class="floating-whatsapp" data-whatsapp aria-label="Chat on WhatsApp">◔</a>
+  <a class="floating-whatsapp" data-whatsapp aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+      <path d="M16 3.2A12.8 12.8 0 0 0 5 22.5L3.2 28.8l6.5-1.7A12.8 12.8 0 1 0 16 3.2Zm0 23.3a10.5 10.5 0 0 1-5.3-1.4l-.4-.2-3.8 1 1-3.7-.2-.4A10.5 10.5 0 1 1 16 26.5Zm5.8-7.8c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-1.6-.8-2.7-1.4-3.8-3.2-.3-.5.3-.4.8-1.4.1-.2.1-.4 0-.6s-.7-1.7-.9-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1-1.1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.3 5.2 4.6.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.3.2-1.5 0-.2-.2-.3-.5-.5Z" />
+    </svg>
+  </a>
 
   <div class="booking-modal" id="bookingModal" aria-hidden="true"><div class="modal-backdrop" data-close-modal></div><div class="booking-panel" role="dialog" aria-modal="true" aria-labelledby="bookingTitle"><button class="modal-close" data-close-modal aria-label="Close booking">×</button><div id="providerStep"><p class="eyebrow">Booking</p><h2 id="bookingTitle">Choose your provider</h2><p class="muted">Select a preferred therapist to continue.</p><div class="provider-grid" id="providerGrid"></div><button class="button button-primary full" id="continueBooking" disabled>Continue to booking <span>↗</span></button></div><form id="bookingForm" hidden><p class="eyebrow">Complete your booking</p><h2>Reserve Your Session</h2><p class="muted">Choose your preferred treatment, date and time.</p><div class="selected-provider" id="selectedProvider"></div><div class="form-grid"><label>Full Name<input name="name" required placeholder="Your name"></label><label>Phone Number<input name="phone" required type="tel" placeholder="Your phone number"></label><label>Email Address (optional)<input name="email" type="email" placeholder="Your email address"></label><label>Service<select name="service" required><option value="">Select a service</option><option>Swedish Massage</option><option>Deep Tissue Massage</option><option>Reflexology</option><option>Sports Massage</option><option>Normal Massage</option><option>Sensual Massage</option></select></label><label>Preferred Date<input name="date" required type="date"></label><label>Preferred Time<select name="time" required><option value="">Select a time</option><option>10:00 AM</option><option>12:00 PM</option><option>2:00 PM</option><option>4:00 PM</option><option>6:00 PM</option></select></label><label class="wide">Notes (optional)<textarea name="notes" rows="3" placeholder="Anything we should know?"></textarea></label></div><p class="form-note">Your request is sent to the spa and a member of our team confirms your appointment.</p><button class="button button-primary full" type="submit">Complete in WhatsApp <span>↗</span></button></form></div></div>
   <script src="script.js"></script>
