@@ -22,13 +22,14 @@
     .hero-lockup-copy { display: flex; flex-direction: column; margin: 0 18px 0 14px; }
     .hero-lockup-name { color: var(--foreground); font: 600 1.15rem/1 var(--serif); letter-spacing: .2em; white-space: nowrap; }
     .hero-lockup-subtitle { margin-top: 6px; color: var(--gold); font-size: .58rem; letter-spacing: .22em; }
-    .pre-hero-logo { display: flex; justify-content: center; padding: 18px 24px; background: var(--background); }
+    .pre-hero-logo { display: flex; justify-content: center; padding: 18px 24px; background: linear-gradient(180deg, #18121f 0%, #24142d 52%, #18121f 100%); }
     .pre-hero-logo img { width: min(220px, 55vw); height: auto; display: block; }
+    .floating-whatsapp { bottom: 88px; }
     .package-card { display: grid; grid-template-columns: minmax(0, 1fr) minmax(220px, 34%); overflow: hidden; }
     .package-card img { width: 100%; height: 100%; min-height: 220px; object-fit: cover; }
     .package-card-content { padding: 44px 52px; }
     @media (max-width: 800px) { .package-card { display: block; } .package-card-content { padding: 30px 24px; } }
-    @media (max-width: 480px) { .brand-logo { width: 94px; height: 56px; } .hero-lockup { margin-bottom: 24px; } .hero-lockup img { width: 118px; height: 80px; } .hero-lockup-copy { margin-right: 10px; } .hero-lockup-name { font-size: .82rem; letter-spacing: .12em; } }
+    @media (max-width: 480px) { .brand-logo { width: 94px; height: 56px; } .hero-lockup { margin-bottom: 24px; } .hero-lockup img { width: 118px; height: 80px; } .hero-lockup-copy { margin-right: 10px; } .hero-lockup-name { font-size: .82rem; letter-spacing: .12em; } .floating-whatsapp { bottom: 72px; } }
   </style>
 </head>
 <body>
@@ -75,14 +76,14 @@
         <article class="service-card"><img src="assets/svc-reflexology.jpg" alt="Reflexology treatment"><div class="service-card-body"><p class="eyebrow">03</p><h3>Reflexology</h3><p>A grounding foot treatment that encourages deep relaxation and balance throughout the body.</p><div class="service-meta"><span>45 min</span><strong>KES 4,000</strong></div><button class="text-link" data-book>Book treatment <span>↗</span></button></div></article>
         <article class="service-card"><img src="assets/svc-sports.jpg" alt="Sports massage"><div class="service-card-body"><p class="eyebrow">04</p><h3>Sports Massage</h3><p>Targeted bodywork to support performance, recovery and mobility.</p><div class="service-meta"><span>60 min</span><strong>KES 5,000</strong></div><button class="text-link" data-book>Book treatment <span>↗</span></button></div></article>
         <article class="service-card"><img src="assets/svc-normal.jpg" alt="Normal massage"><div class="service-card-body"><p class="eyebrow">05</p><h3>Normal Massage</h3><p>A classic, unhurried massage for everyday ease and a renewed sense of lightness.</p><div class="service-meta"><span>60 min</span><strong>KES 4,000</strong></div><button class="text-link" data-book>Book treatment <span>↗</span></button></div></article>
-        <article class="service-card"><img src="watermarked_img_16480173349397910306.jpg" alt="Thai massage treatment"><div class="service-card-body"><p class="eyebrow">06</p><h3>Thai Massage</h3><p>Assisted stretches and rhythmic pressure to encourage mobility, balance and deep relaxation.</p><div class="service-meta"><span>60 min</span><strong>KES 5,000</strong></div><button class="text-link" data-book>Book treatment <span>↗</span></button></div></article>
+        <article class="service-card"><img src="watermarked_img_7159563105454195308.jpg" alt="Thai massage treatment"><div class="service-card-body"><p class="eyebrow">06</p><h3>Thai Massage</h3><p>Assisted stretches and rhythmic pressure to encourage mobility, balance and deep relaxation.</p><div class="service-meta"><span>60 min</span><strong>KES 5,000</strong></div><button class="text-link" data-book>Book treatment <span>↗</span></button></div></article>
       </div>
     </section>
 
     <section class="packages container section-pad" id="packages">
       <div class="section-heading centered"><p class="eyebrow">Wellness Package</p><h2>The Complete Reset</h2><div class="luxe-divider"></div></div>
       <div class="package-card">
-        <div class="package-card-content"><p class="eyebrow">KES 10,000</p><h3>Five-treatment wellness package</h3><p>Enjoy Swedish, deep tissue, reflexology, sports and Thai massage in one complete restorative package.</p></div><img src="watermarked_img_7159563105454195308.jpg" alt="Massage treatment from the five-treatment wellness package">
+        <div class="package-card-content"><p class="eyebrow">KES 10,000</p><h3>Five-treatment wellness package</h3><p>Enjoy Swedish, deep tissue, reflexology, sports and Thai massage in one complete restorative package.</p></div><img src="watermarked_img_16480173349397910306.jpg" alt="Massage treatment from the five-treatment wellness package">
         <button class="button button-primary" data-book>Book package <span>↗</span></button>
       </div>
     </section>
