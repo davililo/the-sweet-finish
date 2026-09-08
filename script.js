@@ -18,6 +18,17 @@ const continueBooking = document.querySelector('#continueBooking');
 const selectedProvider = document.querySelector('#selectedProvider');
 let provider = null;
 
+const serviceSelect = bookingForm.querySelector('select[name="service"]');
+serviceSelect.querySelectorAll('option').forEach((option) => {
+  if (option.textContent.toLowerCase().includes('sensual')) option.remove();
+});
+if (![...serviceSelect.options].some((option) => option.value === 'Thai Massage')) {
+  serviceSelect.add(new Option('Thai Massage', 'Thai Massage'));
+}
+if (![...serviceSelect.options].some((option) => option.value === 'Complete Reset Package - KES 10,000')) {
+  serviceSelect.add(new Option('Complete Reset Package - KES 10,000', 'Complete Reset Package - KES 10,000'));
+}
+
 function whatsappUrl(message = '') {
   return `https://wa.me/${WHATSAPP_NUMBER}${message ? `?text=${encodeURIComponent(message)}` : ''}`;
 }

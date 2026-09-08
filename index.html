@@ -10,13 +10,24 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .text-link { display: inline-flex; gap: 10px; margin-top: 22px; padding: 12px 16px; background: var(--primary); color: var(--foreground); text-transform: uppercase; letter-spacing: .16em; font-size: .65rem; transition: background .2s, transform .2s; }
+    .text-link:hover { background: #9a54a5; transform: translateY(-2px); }
+    .brand { display: inline-flex; align-items: center; }
+    .brand-logo { width: 118px; height: 64px; object-fit: contain; display: block; }
+    .hero-lockup { display: inline-flex; align-items: center; margin-bottom: 34px; padding: 8px; border: 1px solid rgba(232, 199, 227, .34); background: rgba(24, 21, 29, .34); box-shadow: 0 10px 30px rgba(24, 21, 29, .2); }
+    .hero-lockup img { width: 142px; height: 96px; object-fit: contain; display: block; }
+    .hero-lockup-copy { display: flex; flex-direction: column; margin: 0 18px 0 14px; }
+    .hero-lockup-name { color: var(--foreground); font: 600 1.15rem/1 var(--serif); letter-spacing: .2em; white-space: nowrap; }
+    .hero-lockup-subtitle { margin-top: 6px; color: var(--gold); font-size: .58rem; letter-spacing: .22em; }
+    @media (max-width: 480px) { .brand-logo { width: 94px; height: 56px; } .hero-lockup { margin-bottom: 24px; } .hero-lockup img { width: 118px; height: 80px; } .hero-lockup-copy { margin-right: 10px; } .hero-lockup-name { font-size: .82rem; letter-spacing: .12em; } }
+  </style>
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#home" aria-label="THE SWEET FINISH home">
         <img src="assets/logo.jpg" alt="THE SWEET FINISH logo" class="brand-logo">
-        <span class="brand-copy"><span class="brand-name">THE SWEET FINISH</span><span class="brand-subtitle">MASSAGE SPA</span></span>
       </a>
       <nav class="desktop-nav" aria-label="Main navigation">
         <a href="#home">Home</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a>
@@ -34,6 +45,10 @@
       <img src="assets/hero-room.jpg" alt="Quiet massage room" class="hero-image">
       <div class="hero-overlay"></div>
       <div class="container hero-content">
+        <div class="hero-lockup" aria-label="The Sweet Finish Massage Spa">
+          <img src="assets/logo.jpg" alt="THE SWEET FINISH logo">
+          <span class="hero-lockup-copy"><span class="hero-lockup-name">THE SWEET FINISH</span><span class="hero-lockup-subtitle">MASSAGE SPA</span></span>
+        </div>
         <p class="eyebrow">Westlands, Nairobi</p>
         <h1>Relax. Restore.<br><em>Reconnect.</em></h1>
         <p class="hero-copy">A private luxury massage and wellness destination designed for your complete escape.</p>
@@ -49,12 +64,20 @@
     <section class="services container" id="services">
       <div class="section-heading centered"><p class="eyebrow">The Menu</p><h2>Signature Treatments</h2><div class="luxe-divider"></div></div>
       <div class="service-grid">
-        <article class="service-card"><img src="assets/svc-swedish.jpg" alt="Swedish massage"><div class="service-card-body"><p class="eyebrow">01</p><h3>Swedish Massage</h3><p>A soothing full-body treatment using flowing strokes to release tension and restore calm.</p><div class="service-meta"><span>60 min</span><strong>KES 5,000</strong></div><button class="text-link" data-book>Book treatment <span>↗</span></button></div></article>
-        <article class="service-card"><img src="assets/svc-deep-tissue.jpg" alt="Deep tissue massage"><div class="service-card-body"><p class="eyebrow">02</p><h3>Deep Tissue Massage</h3><p>Focused, therapeutic pressure for persistent tension and muscular recovery.</p><div class="service-meta"><span>60 min</span><strong>KES 6,000</strong></div><button class="text-link" data-book>Book treatment <span>↗</span></button></div></article>
+        <article class="service-card"><img src="assets/svc-swedish.jpg" alt="Swedish massage"><div class="service-card-body"><p class="eyebrow">01</p><h3>Swedish Massage</h3><p>A soothing full-body treatment using flowing strokes to release tension and restore calm.</p><div class="service-meta"><span>60 min</span><strong>KES 4,000</strong></div><button class="text-link" data-book>Book treatment <span>↗</span></button></div></article>
+        <article class="service-card"><img src="assets/svc-deep-tissue.jpg" alt="Deep tissue massage"><div class="service-card-body"><p class="eyebrow">02</p><h3>Deep Tissue Massage</h3><p>Focused, therapeutic pressure for persistent tension and muscular recovery.</p><div class="service-meta"><span>60 min</span><strong>KES 5,000</strong></div><button class="text-link" data-book>Book treatment <span>↗</span></button></div></article>
         <article class="service-card"><img src="assets/svc-reflexology.jpg" alt="Reflexology treatment"><div class="service-card-body"><p class="eyebrow">03</p><h3>Reflexology</h3><p>A grounding foot treatment that encourages deep relaxation and balance throughout the body.</p><div class="service-meta"><span>45 min</span><strong>KES 4,000</strong></div><button class="text-link" data-book>Book treatment <span>↗</span></button></div></article>
-        <article class="service-card"><img src="assets/svc-sports.jpg" alt="Sports massage"><div class="service-card-body"><p class="eyebrow">04</p><h3>Sports Massage</h3><p>Targeted bodywork to support performance, recovery and mobility.</p><div class="service-meta"><span>60 min</span><strong>KES 6,000</strong></div><button class="text-link" data-book>Book treatment <span>↗</span></button></div></article>
-        <article class="service-card"><img src="assets/svc-normal.jpg" alt="Normal massage"><div class="service-card-body"><p class="eyebrow">05</p><h3>Normal Massage</h3><p>A classic, unhurried massage for everyday ease and a renewed sense of lightness.</p><div class="service-meta"><span>60 min</span><strong>KES 4,500</strong></div><button class="text-link" data-book>Book treatment <span>↗</span></button></div></article>
-        <article class="service-card"><img src="assets/svc-sensual.jpg" alt="Sensual massage"><div class="service-card-body"><p class="eyebrow">06</p><h3>Sensual Massage</h3><p>A deeply relaxing experience that invites you to slow down and reconnect with yourself.</p><div class="service-meta"><span>60 min</span><strong>KES 7,000</strong></div><button class="text-link" data-book>Book treatment <span>↗</span></button></div></article>
+        <article class="service-card"><img src="assets/svc-sports.jpg" alt="Sports massage"><div class="service-card-body"><p class="eyebrow">04</p><h3>Sports Massage</h3><p>Targeted bodywork to support performance, recovery and mobility.</p><div class="service-meta"><span>60 min</span><strong>KES 5,000</strong></div><button class="text-link" data-book>Book treatment <span>↗</span></button></div></article>
+        <article class="service-card"><img src="assets/svc-normal.jpg" alt="Normal massage"><div class="service-card-body"><p class="eyebrow">05</p><h3>Normal Massage</h3><p>A classic, unhurried massage for everyday ease and a renewed sense of lightness.</p><div class="service-meta"><span>60 min</span><strong>KES 4,000</strong></div><button class="text-link" data-book>Book treatment <span>↗</span></button></div></article>
+        <article class="service-card"><img src="assets/svc-normal.jpg" alt="Thai massage"><div class="service-card-body"><p class="eyebrow">06</p><h3>Thai Massage</h3><p>Assisted stretches and rhythmic pressure to encourage mobility, balance and deep relaxation.</p><div class="service-meta"><span>60 min</span><strong>KES 5,000</strong></div><button class="text-link" data-book>Book treatment <span>↗</span></button></div></article>
+      </div>
+    </section>
+
+    <section class="packages container section-pad" id="packages">
+      <div class="section-heading centered"><p class="eyebrow">Wellness Package</p><h2>The Complete Reset</h2><div class="luxe-divider"></div></div>
+      <div class="package-card">
+        <div><p class="eyebrow">KES 10,000</p><h3>Five-treatment wellness package</h3><p>Enjoy Swedish, deep tissue, reflexology, sports and Thai massage in one complete restorative package.</p></div>
+        <button class="button button-primary" data-book>Book package <span>↗</span></button>
       </div>
     </section>
 
@@ -62,7 +85,7 @@
 
     <section class="standards container section-pad"><div class="section-heading centered"><p class="eyebrow">Why Choose Us</p><h2>The Sweet Finish Standard</h2><div class="luxe-divider"></div></div><div class="standard-grid"><article><span class="standard-icon">✦</span><h3>Professional Therapists</h3><p>Trained, discreet and attentive from the first minute.</p></article><article><span class="standard-icon">✦</span><h3>Private Treatment Rooms</h3><p>Every session takes place in a fully private suite.</p></article><article><span class="standard-icon">✦</span><h3>Premium Environment</h3><p>Considered lighting, fresh linens and calm throughout.</p></article><article><span class="standard-icon">✦</span><h3>Convenient Westlands Location</h3><p>Minutes from Sarit Centre with easy parking.</p></article></div></section>
 
-    <section class="contact" id="contact"><div class="container contact-inner"><p class="eyebrow">Contact</p><h2>Reserve or simply say hello</h2><address>⌖ <span>Westlands, behind Sarit Centre, School Lane, Westview Apartments, Nairobi.</span></address><div class="contact-actions"><a class="button button-primary" data-whatsapp>◔ Chat on WhatsApp</a><a class="button button-outline" href="tel:0182095210">⌕ Call 0182095210</a><a class="button button-card" href="https://www.google.com/maps/dir/?api=1&destination=Westview%20Apartments%2C%20School%20Lane%2C%20Westlands%2C%20Nairobi%2C%20Kenya&travelmode=driving" target="_blank" rel="noopener">↗ Get Directions</a><button class="button button-card" data-book>Book Now</button></div></div></section>
+    <section class="contact" id="contact"><div class="container contact-inner"><p class="eyebrow">Contact</p><h2>Reserve or simply say hello</h2><address>⌖ <span>Westlands, behind Sarit Centre, School Lane, Westview Apartments, Nairobi.</span></address><div class="contact-actions"><a class="button button-primary" data-whatsapp>◔ Chat on WhatsApp</a><a class="button button-outline" href="tel:0182095210">⌕ Call 0182095210</a><a class="button button-card" href="https://www.google.com/maps/dir/?api=1&destination=-1.257722%2C36.799833&travelmode=driving" target="_blank" rel="noopener">↗ Get Directions</a><button class="button button-card" data-book>Book Now</button></div></div></section>
   </main>
 
   <footer><div class="container footer-grid"><div><img src="assets/logo.jpg" alt="THE SWEET FINISH logo" class="footer-logo"><h3>THE SWEET FINISH</h3><p>Relax. Restore. Reconnect.</p></div><div><p class="eyebrow">Explore</p><a href="#services">Services</a><a href="#about">About Us</a><a href="#contact">Contact</a></div><div><p class="eyebrow">Visit & Contact</p><p>Westlands, behind Sarit Centre,<br>School Lane,<br>Westview Apartments,<br>Nairobi.</p><a data-whatsapp>◔ Chat on WhatsApp</a><a href="tel:0182095210">⌕ Call 0182095210</a></div></div><div class="copyright">© 2026 THE SWEET FINISH, Westlands, Nairobi. All rights reserved.</div></footer>
